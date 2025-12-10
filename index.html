@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+
+
+</body>
+
+</html>
+<head>
+<meta charset="utf-8">
+<title>Arquitecturas y Protocolos de Comunicación en IoT (MQTT y CoAP)</title>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+</head>
+<body>
+    <header>
+        <h1>Arquitecturas y Protocolos de Comunicación en IoT (MQTT y CoAP)</h1>    
+     <p>Eduardo fernandez</p>
+     <img src="https://cdn-icons-png.flaticon.com/512/76/76806.png"  >
+    </header>
+   
+<p>
+El Internet de las Cosas (IoT) es una de las tecnologías más importantes en la actualidad, ya que permite la interconexión de objetos físicos a través de Internet para el intercambio de datos sin intervención humana directa. Gracias al IoT, hoy es posible controlar hogares inteligentes, monitorear industrias, gestionar ciudades y optimizar procesos médicos, agrícolas y empresariales.<br>
+
+Para que estos dispositivos funcionen correctamente, es indispensable contar con arquitecturas adecuadas y protocolos de comunicación eficientes, que permitan el envío y recepción de información de manera segura, rápida y confiable. Entre los protocolos más utilizados se destacan MQTT y CoAP, diseñados especialmente para dispositivos con recursos limitados.
+
+Este trabajo explica las principales arquitecturas IoT y profundiza en los protocolos MQTT y CoAP, analizando su funcionamiento, ventajas, desventajas y aplicaciones reales en la industria actual.
+</p>
+<h2>
+    ¿Qué es una Arquitectura IoT?
+</h2>
+<p>Una arquitectura IoT es el modelo que define cómo se organizan e interconectan los dispositivos, servidores, redes y aplicaciones dentro de un sistema IoT. Su objetivo es garantizar una comunicación eficiente entre todos los elementos del sistema.</p>
+<h3>capaz de la arquitectura IoT</h3>
+   <h3>4.2 Capas de la Arquitectura IoT</h3>
+
+<table >
+    <tr style="background-color:#0077cc; color:white;">
+        <th>Capa</th>
+        <th>Función</th>
+    </tr>
+    <tr>
+        <td>Capa de Percepción</td>
+        <td>Captura datos mediante sensores y actuadores.</td>
+    </tr>
+    <tr>
+        <td>Capa de Transporte></td>
+        <td>Transmite los datos a través de redes como WiFi, 4G o 5G.</td>
+    </tr>
+    <tr>
+        <td>Capa de Procesamiento</td>
+        <td>Almacena y analiza la información en servidores o en la nube.</td>
+    </tr>
+    <tr>
+        <td>Capa de Aplicación</td>
+        <td>Presenta los datos al usuario mediante sistemas o aplicaciones.</td>
+    </tr>
+</table>
+
+</body>
+<h4>Protocolos de Comunicación IoT</h4>
+<p>Los protocolos de comunicación permiten que los dispositivos IoT transmitan información entre sí y con los servidores. Deben ser ligeros, rápidos y eficientes, ya que muchos dispositivos tienen poca batería, memoria y capacidad de procesamiento.
+
+Los dos protocolos más importantes son:.</p>
+<ul>
+    <li>MQTT (Message Queuing Telemetry Transport)</li>
+    <li>CoAP (Constrained Application Protocol)</li>
+</ul>
+
+<h3>4.4 Protocolo MQTT</h3>
+
+<p>
+MQTT (Message Queuing Telemetry Transport) es un protocolo de comunicación ligero basado en el modelo 
+publicador–suscriptor. En este modelo, los dispositivos no se comunican directamente entre sí, 
+sino a través de un servidor central llamado broker, que se encarga de recibir y distribuir los mensajes.
+</p>
+
+<p>
+Su funcionamiento se basa en que los dispositivos envían mensajes a un tema específico, y todos los equipos 
+suscritos a ese tema reciben la información de forma automática. Esto permite una comunicación eficiente, rápida 
+y confiable en sistemas IoT.
+</p>
+
+<p>Ventajas del protocolo MQTT:</p>
+<ul>
+    <li>Bajo consumo de ancho de banda.</li>
+    <li>Ideal para redes inestables.</li>
+    <li>Alta fiabilidad en el envío de datos.</li>
+    <li>Comunicación en tiempo real.</li>
+</ul>
+
+<p>Desventajas del protocolo MQTT:</p>
+<ul>
+    <li>Requiere un servidor intermediario llamado broker.</li>
+    <li>Mayor consumo de recursos en comparación con otros protocolos ligeros.</li>
+</ul>
+
+<p>Usos más comunes del protocolo MQTT:</p>
+<ul>
+    <li>Domótica y casas inteligentes.</li>
+    <li>Monitoreo industrial.</li>
+    <li>Sistemas de transporte inteligente.</li>
+    <li>Sensores ambientales.</li>
+</ul>
+
+
+<h3>4.5 Protocolo CoAP</h3>
+
+<p>
+CoAP (Constrained Application Protocol) es un protocolo de comunicación diseñado especialmente para 
+dispositivos con recursos limitados, como sensores y sistemas embebidos. Su funcionamiento es similar 
+al protocolo HTTP, pero es mucho más ligero y eficiente, lo que lo hace ideal para entornos IoT.
+</p>
+
+<p>
+Este protocolo permite la comunicación directa entre dispositivos mediante el uso de mensajes de tipo 
+GET, POST, PUT y DELETE. CoAP trabaja sobre el protocolo UDP, lo que reduce 
+el consumo de energía y el tiempo de transmisión de los datos.
+</p>
+
+<p>Ventajas del protocolo CoAP:</p>
+<ul>
+    <li>Muy bajo consumo de energía.</li>
+    <li>Alta velocidad en la transmisión de datos.</li>
+    <li>Ideal para sensores y dispositivos de baja potencia.</li>
+    <li>Permite comunicación directa entre dispositivos.</li>
+</ul>
+
+<p>Desventajas del protocolo CoAP:</p>
+<ul>
+    <li>Menor nivel de seguridad en comparación con MQTT.</li>
+    <li>Menor confiabilidad en redes inestables.</li>
+    <li>No es recomendable para transmisión continua de datos.</li>
+</ul>
+
+<p>Usos más comunes del protocolo CoAP:</p>
+<ul>
+    <li>Sensores ambientales.</li>
+    <li>Dispositivos médicos de bajo consumo.</li>
+    <li>Redes de sensores inalámbricos.</li>
+    <li>Sistemas embebidos.</li>
+</ul>
+
+
+<h7>Ejemplos o Casos Prácticos</h7>
+<h8>Caso 1: Hogar Inteligente usando MQTT</h8>
+
+<p>En una casa inteligente, los sensores de temperatura y movimiento envían datos al servidor mediante MQTT. El usuario puede controlar luces, alarmas y climatización en tiempo real desde su teléfono móvil.</p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNEXLu-LfE41sTvPzyKDc8MwVoMc6nZLWgWg&s"><br>
+    <h9>Caso 2: Sensores Ambientales usando CoAP</h9>
+    <p>En un sistema de monitoreo ambiental, pequeños sensores ubicados en el campo transmiten datos de humedad y temperatura mediante CoAP, debido a su bajo consumo de energía.</p>
+ <footer>Eduardo fernandez 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjcsNiQXuQrMu_vWERG3bQl2DMFDU79M8uEQ&s">
+    </footer>
+</html>
